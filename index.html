@@ -1,0 +1,409 @@
+
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="A special birthday website made with love for Khanin.">
+
+    <title>Happy Birthday Khanin ❤️</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="static/css/style.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="static/images/foto1.jpg" type="image/jpeg">
+</head>
+
+<body>
+
+    <!-- BACKGROUND DECORATIONS -->
+    <div class="hearts-container" id="hearts"></div>
+
+
+    <!-- ==================================================
+         1. LANDING PAGE
+    ================================================== -->
+
+    <main class="birthday-container">
+
+        <div class="flower">🌸</div>
+
+        <p class="small-title">
+            A SPECIAL DAY FOR SOMEONE SPECIAL
+        </p>
+
+        <h1>
+            Happy Birthday
+            <span>Khanin!</span>
+        </h1>
+
+        <p class="birthday-date">
+            28 November 2026
+        </p>
+
+        <div class="birthday-image">
+            <span>🎂</span>
+        </div>
+
+        <p class="birthday-message">
+            Hari ini adalah hari yang spesial,
+            karena seseorang yang istimewa sedang berulang tahun.
+            Semoga semua hal baik selalu menyertaimu.
+        </p>
+
+        <p class="signature">
+            With love, <strong>Ahnaf ❤️</strong>
+        </p>
+
+        <button id="surpriseButton" type="button">
+            Open Your Surprise 💌
+        </button>
+
+        <div id="surpriseMessage" class="surprise-message">
+
+            <h2>For You, Khanin ❤️</h2>
+
+            <p>
+                Terima kasih sudah menjadi bagian dari
+                cerita indah ini. Semoga hari ini penuh
+                kebahagiaan dan senyuman.
+            </p>
+
+        </div>
+
+    </main>
+
+
+    <!-- ==================================================
+         2. GALERI FOTO
+    ================================================== -->
+
+    <section class="gallery-section" id="gallery">
+
+        <div class="section-heading">
+
+            <p class="gallery-label">
+                A COLLECTION OF MEMORIES
+            </p>
+
+            <h2>Our Little Memories ♡</h2>
+
+            <p>
+                Beberapa momen indah yang ingin selalu aku kenang.
+            </p>
+
+        </div>
+
+
+        <div class="gallery-container">
+
+            <div class="photo-card">
+
+                <img
+                    src="static/images/foto1.jpg"
+                    alt="Kenangan pertama"
+                    onclick="openLightbox(this.src)"
+                    loading="lazy">
+
+                <h3>Beautiful Moment ♡</h3>
+
+                <p>
+                    Satu dari banyak cerita indah kita.
+                </p>
+
+            </div>
+
+
+            <div class="photo-card">
+
+                <img
+                    src="static/images/foto2.jpg"
+                    alt="Kenangan kedua"
+                    onclick="openLightbox(this.src)"
+                    loading="lazy">
+
+                <h3>Sweet Memories</h3>
+
+                <p>
+                    Momen sederhana yang begitu berarti.
+                </p>
+
+            </div>
+
+
+            <div class="photo-card">
+
+                <img
+                    src="static/images/foto3.jpg"
+                    alt="Kenangan ketiga"
+                    onclick="openLightbox(this.src)"
+                    loading="lazy">
+
+                <h3>My Favorite Day</h3>
+
+                <p>
+                    Hari yang selalu ingin aku ingat.
+                </p>
+
+            </div>
+
+
+            <div class="photo-card">
+
+                <img
+                    src="static/images/foto4.jpg"
+                    alt="Kenangan keempat"
+                    onclick="openLightbox(this.src)"
+                    loading="lazy">
+
+                <h3>Little Happiness</h3>
+
+                <p>
+                    Terima kasih untuk setiap senyuman.
+                </p>
+
+            </div>
+
+
+            <div class="photo-card">
+
+                <img
+                    src="static/images/foto5.jpg"
+                    alt="Kenangan kelima"
+                    onclick="openLightbox(this.src)"
+                    loading="lazy">
+
+                <h3>Forever Memories</h3>
+
+                <p>
+                    Semoga cerita indah ini terus bertambah.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ==================================================
+         3. LIGHTBOX FOTO
+    ================================================== -->
+
+    <div
+        class="lightbox"
+        id="lightbox"
+        onclick="closeLightbox()">
+
+        <span class="lightbox-close">&times;</span>
+
+        <img
+            id="lightbox-image"
+            alt="Foto kenangan">
+
+    </div>
+
+
+    <!-- ==================================================
+         4. VIDEO KENANGAN
+    ================================================== -->
+
+    <section class="video-section" id="video">
+
+        <div class="section-heading">
+
+            <p class="gallery-label">
+                A VIDEO FOR YOU
+            </p>
+
+            <h2>Our Special Moments 🎬</h2>
+
+            <p>
+                Sebuah kumpulan momen yang ingin selalu aku simpan.
+            </p>
+
+        </div>
+
+
+        <div class="video-container">
+
+            <video
+                controls
+                preload="metadata"
+                poster="static/images/foto1.jpg">
+
+                <source
+                    src="static/videos/kenangan.mp4"
+                    type="video/mp4">
+
+                Browser kamu tidak mendukung video.
+
+            </video>
+
+            <p class="video-caption">
+                A little movie about our memories ♡
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ==================================================
+         5. DIGITAL LETTER
+    ================================================== -->
+
+    <section class="letter-section">
+
+        <div class="section-heading">
+
+            <p class="gallery-label">
+                A LITTLE LETTER FOR YOU
+            </p>
+
+            <h2>A Letter for Khanin 💌</h2>
+
+            <p>
+                Ada sesuatu yang ingin aku sampaikan
+                khusus untukmu di hari istimewamu.
+            </p>
+
+        </div>
+
+
+        <div
+            class="envelope-wrapper"
+            id="envelopeWrapper">
+
+            <div class="envelope">
+
+                <div class="envelope-back"></div>
+
+
+                <div
+                    class="letter-paper"
+                    id="letterPaper">
+
+                    <div class="letter-content">
+
+                        <h2>Dear Khanin ❤️</h2>
+
+                        <p>
+                            Happy Birthday, Khanin!
+                        </p>
+
+                        <p>
+                            Selamat bertambah usia untuk seseorang
+                            yang begitu istimewa.
+                            Semoga di usia barumu ini, kamu selalu
+                            diberikan kebahagiaan, kesehatan,
+                            dan kemudahan dalam setiap langkah.
+                        </p>
+
+                        <p>
+                            Terima kasih sudah hadir dan menjadi
+                            bagian dari cerita indah ini.
+                            Aku harap setiap harimu dipenuhi
+                            hal-hal baik dan alasan untuk tersenyum.
+                        </p>
+
+                        <p>
+                            Semoga semua harapan dan impianmu
+                            satu per satu bisa terwujud.
+                            Jangan lupa untuk selalu percaya
+                            pada dirimu sendiri.
+                        </p>
+
+                        <p>
+                            Sekali lagi, happy birthday!
+                            Semoga hari ini menjadi salah satu
+                            kenangan indah yang selalu kamu ingat.
+                        </p>
+
+                        <p class="letter-signature">
+                            With love,<br>
+                            <strong>Ahnaf ❤️</strong>
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="envelope-flap"></div>
+
+                <div class="envelope-front"></div>
+
+                <div class="envelope-heart">♥</div>
+
+            </div>
+
+        </div>
+
+
+        <button
+            id="letterButton"
+            class="letter-button"
+            type="button">
+
+            Open Your Letter 💌
+
+        </button>
+
+
+        <p class="letter-hint">
+            A little message, made especially for you ♡
+        </p>
+
+    </section>
+
+
+    <!-- ==================================================
+         6. FOOTER
+    ================================================== -->
+
+    <footer>
+        Made with ❤️ by Ahnaf
+    </footer>
+
+
+    <!-- ==================================================
+         7. BACKGROUND MUSIC
+    ================================================== -->
+
+    <div class="music-control">
+
+        <audio id="backgroundMusic" loop>
+
+            <source
+                src="static/music/lagu.mp3"
+                type="audio/mpeg">
+
+            Browser kamu tidak mendukung audio.
+
+        </audio>
+
+
+        <button
+            id="musicButton"
+            type="button">
+
+            ♫ Play Music
+
+        </button>
+
+    </div>
+
+
+    <!-- ==================================================
+         8. JAVASCRIPT
+    ================================================== -->
+
+    <script src="static/js/script.js"></script>
+
+</body>
+
+</html>
